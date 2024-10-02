@@ -1,10 +1,11 @@
 # Project Overview
 
-In this project, we'll predict the future price of Bitcoin.  We'll use historical data on the price of Bitcoin, along with data from Wikipedia about edits to the Bitcoin page.  We'll merge and combine this data, then use it to train a random forest model that will tell us if Bitcoin prices will increase or decrease tomorrow.  We'll then switch to an XGBoost model and better predictors to improve accuracy.
-
-We'll develop a backtesting system and use a robust error metric so we can tell if the algorithm is performing well.
-
-This project can be extended to other cryptocurrencies as well.
+Created a random forest model to forecast Bitcoin prices using historical price and sentiment data, achieving
+accurate next-day predictions.
+Transitioned to XGBoost and incorporated advanced predictors, resulting in improved accuracy and robustness
+in price forecasts.
+Developed a robust backtesting system to evaluate model performance, enabling extensions to other
+cryptocurrencies and multi-day predictions.
 
 **Project Steps**
 
@@ -12,10 +13,6 @@ This project can be extended to other cryptocurrencies as well.
 * Clean and merge data
 * Create an initial machine learning model and estimate accuracy
 * Switch to a more powerful model and improve our predictors
-
-## Code
-
-You can find the code for this project [here](https://github.com/dataquestio/project-walkthroughs/tree/master/bitcoin_price)
 
 File overview:
 
@@ -37,12 +34,6 @@ To follow this project, please install the following locally:
     * xgboost
     * mwclient
     * transformers
-
-## Data
-
-Computing the Wikipedia edit data takes time.  It can be faster to use the version that's already been generated.  It's in this repository, and called `wikipedia_edits.csv`.  Feel free to download and use the file.  You can also get it from [here](https://drive.google.com/uc?export=download&id=1XwJZ07bl2u-62yRMqV_emJGEXCI1u8dl).
-
-We'll be downloading the Bitcoin price data using the `yfinance` package as part of the project.
 
 ## Running
 
